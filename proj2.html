@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .overall{
+            display: grid;
+            grid-template-columns: 70px 70px 70px 70px 70px;
+            gap: 5px;
+            text-align: center;
+        }
+        .header{
+            grid-column-start: 1;
+            grid-column-end: 6;
+            border: 2px solid black;
+             background-color: rgb(2, 253, 2);
+        }
+        .Side{
+            grid-row: 2/4;
+            border: 2px solid black;
+            background-color: rgb(2, 253, 2);
+        }
+        .Foot{
+            grid-column: 1/6;
+            border: 2px solid black;
+             background-color: rgb(2, 253, 2);
+        }
+        .cont1{
+            grid-column-start: 2;
+            grid-column-end: 6;
+            border: 2px solid black;
+             background-color: rgb(2, 253, 2);
+        }
+        .cont2{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            border: 2px solid black;
+             background-color: rgb(2, 253, 2);
+        }
+         .cont3{
+            grid-column-start: 4;
+            grid-column-end: 6;
+            border: 2px solid black;
+             background-color: rgb(2, 253, 2);
+        }
+    </style>
+</head>
+<body>
+    <div class="overall">
+        <div class="header">
+            <h4>Header</h4>
+        </div>
+        <div class="cont1">
+            <p>Content1</p>
+        </div>
+        <div class="cont2">
+           <p>Content2</p>
+        </div>
+        <div class="cont3">
+            <p>Content3</p>
+        </div>
+        <div class="Side">
+            <p>Side Bar</p>
+        </div>
+        <div class="Foot">
+            <p>Footer</p>
+        </div>
+    </div>
+</body>
+</html>

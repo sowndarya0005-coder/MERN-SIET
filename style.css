@@ -1,0 +1,126 @@
+body{
+    margin:0;
+    padding:0;
+}
+.header{
+    background-color:rgb(24, 24, 28);   
+    color: white;
+    height: 310px;
+    width: 100%;
+}
+.intro{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 90px;
+    display: flex;
+    margin-top: 90px;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.intro ul{
+    list-style-type: none;
+    display: flex;
+    cursor: pointer;
+}
+.intro ul li:hover{
+   color: black;
+}
+.intro ul li{
+    padding: 5px;
+    margin-right: 35px;
+}
+.imagePlace{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+.img1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:380px;
+    height:200px;
+    margin-left: 85px;
+}
+.img1 button{
+     color: antiquewhite;
+    background-color: rgb(0, 105, 150);
+    border: none;
+    border-radius: 4px;
+    font-weight:600;
+    padding: 5px; 
+}
+.img2{
+    width:400px;
+    height: 180px;
+    background-color: gray;
+    border-radius: 8px;
+    text-align: center;
+     margin-right: 55px;
+     margin-top: 15px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.info{
+    color: black;
+    width:100%;
+    height: 230px;
+
+}
+.lists{
+    padding-left: 95px;
+}
+.lists ul{
+    list-style-type: none;
+    display: flex;
+}
+.lists ul li{
+   width:150px;
+   height: 50px;
+   text-align: center;
+   padding: 50px;
+}
+.quote{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(156, 154, 154);
+    color: black;
+    margin-top: 100px;
+    font-size: larger;
+}
+.qu1{
+    margin-left: 35%;
+    padding: 15px;
+}
+.action{
+    width: 80%;
+    height: 130px;
+    background-color: rgb(13, 63, 129);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left:10%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+.action1{
+  margin-left: 35px;
+}
+.action1 button{
+    border: none;
+    background-color: rgb(14, 58, 152);
+    color: white;
+    border-radius: 5px;
+    padding: 2px 20px;
+    border: 1px solid white;
+    margin-left:80%;
+    margin-top: 20px;
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(29, 27, 27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

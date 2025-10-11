@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            height: 100%;
+            margin: 0;
+            background: linear-gradient( rgb(181, 98, 241),rgb(0, 140, 255),rgb(0, 174, 255), rgb(0, 140, 255),rgb(0, 251, 255));
+        }
+        h3, h1{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        #result{
+            font-size: x-large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .choices{
+            text-align: center;
+            padding: 30px;
+        }
+        .choices button{
+            border: 3px solid black;
+            border-radius: 8px;
+            transition: transform 0.1s ease;
+            cursor: pointer;
+        }
+        button:active{
+            transform: scale(0.9);
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="margin: 0;">Rock🪨 Paper📄 Scissor✂️</h1><hr>
+    <h3 style="font-weight: bolder;font-size: x-large;">CHOOSE YOURS🤩</h3>
+    <div class="choices">
+    <button style="margin-right: 35px;"><img src="https://thumbs.dreamstime.com/b/flirty-japanese-cartoon-rock-digital-illustration-116946145.jpg" height="180px" onclick="game('rock')" > <br> <b>Rock🪨</b></button>
+    <button style="margin-right: 35px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-yk8l8GECx2LoGNZTD6Un8aeb47vN1KWedA&s" height="180px" onclick="game('paper')" ><br><b>Paper📄</b> </button>
+    <button><img src="https://static.vecteezy.com/system/resources/thumbnails/068/129/669/small_2x/a-cartoon-pair-of-scissors-with-a-happy-face-vector.jpg" height="180px" width="200px" onclick="game('sciss')"><br><b>Scissor✂️</b></button>
+    </div><hr>
+    <div id="result" style="font-weight: bolder;text-align: center;"><b>Score:</b></div>
+    <script>
+        function game(player){
+            const choices=['rock','paper','sciss'];
+            let computer = choices[Math.floor(Math.random()*3)];
+            let result="";
+            if(player===computer){
+                result="Draw😊";
+            }
+            else if((player==='rock' && computer =='sciss') || (player==='paper' && computer=='rock') || (player==='sciss' && computer=='paper')){
+                result="You win🥳";
+            }else{
+                result="You lose🥲";
+            }
+            document.getElementById("result").innerHTML=`<h3>${result}</h3>`;
+        }
+    </script>
+</body>
+</html>
+
+
